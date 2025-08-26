@@ -19,6 +19,7 @@
         <div class="tabs__chips" aria-label="Tabs" role="tablist">
           <button class="tabs__chip active"
                   role="tab"
+                  data-value="account"
                   aria-selected="true"
                   aria-controls="account"
                   tabindex="0">
@@ -26,6 +27,7 @@
           </button>
           <button class="tabs__chip"
                   role="tab"
+                  data-value="security"
                   aria-selected="false"
                   aria-controls="security"
                   tabindex="-1">
@@ -33,6 +35,7 @@
           </button>
           <button class="tabs__chip"
                   role="tab"
+                  data-value="plan"
                   aria-selected="false"
                   aria-controls="plan"
                   tabindex="-1">
@@ -40,13 +43,13 @@
           </button>
         </div>
         <div class="tabs__panels">
-          <div class="tabs__panel" role="tabpanel" id="account" tabindex="0">
+          <div data-value="account" class="tabs__panel" role="tabpanel" id="account" tabindex="0">
             The Account Management section provides a comprehensive view of your personal information and settings. Here, you can update your profile details, manage contact information, and customize your preferences to enhance your user experience.
           </div>
-          <div class="tabs__panel" role="tabpanel" id="security" tabindex="0" hidden>
+          <div data-value="security" class="tabs__panel" role="tabpanel" id="security" tabindex="0" hidden>
             The Security Settings section is dedicated to protecting your account and personal data. Here, you can manage various security features to ensure your information remains safe and secure.
           </div>
-          <div class="tabs__panel" role="tabpanel" id="plan" tabindex="0" hidden>
+          <div data-value="plan" class="tabs__panel" role="tabpanel" id="plan" tabindex="0" hidden>
             The Subscription Plan section provides details about your current plan and available upgrades. Here, you can review your plan’s benefits, manage billing information, and explore other subscription options to find the best fit for your needs.
           </div>
         </div>
