@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- [Delete this comment] This file is the main file for the challenge. For the most part, you should be editing this file. -->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,36 +11,46 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-
-    <!-- Tailwind CDN allows you to use Tailwind classes immediately in your HTML without any installation steps. 
-      If you're not using Tailwind, you may delete the <script> -->
-    <!-- Get started on Tailwind: https://tailwindcss.com/docs/installation/play-cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="icon" href="img/favicon.ico" sizes="any" />
-    <style>
-      /* You may write styles inside this <style> tag or within `css/style.css`. */
-    </style>
   </head>
   <body>
-    <!-- Add your site or application content here -->
-    <h1 class="text-5xl text-center font-semibold pt-20">
-      Hello world! Write your content here.
-    </h1>
-
-    <!-- Attribute this challenge to yourself! -->
-    <div class="credits" data-gfe-screenshot-exclude="true">
-      A challenge by
-      <a
-        href="https://www.greatfrontend.com/projects?ref=challenges"
-        target="_blank"
-        >GreatFrontEnd Projects</a
-      >. Built by
-      <a
-        href="https://www.greatfrontend.com/projects/u/username"
-        target="_blank"
-        >Your Name</a
-      >.
+    <div class="container">
+      <div class="tabs">
+        <div class="tabs__chips" aria-label="Tabs" role="tablist">
+          <button class="tabs__chip active"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="account"
+                  tabindex="0">
+            Account
+          </button>
+          <button class="tabs__chip"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="security"
+                  tabindex="-1">
+            Security
+          </button>
+          <button class="tabs__chip"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="plan"
+                  tabindex="-1">
+            Plan
+          </button>
+        </div>
+        <div class="tabs__panels">
+          <div class="tabs__panel" role="tabpanel" id="account" tabindex="0">
+            The Account Management section provides a comprehensive view of your personal information and settings. Here, you can update your profile details, manage contact information, and customize your preferences to enhance your user experience.
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="security" tabindex="0" hidden>
+            The Security Settings section is dedicated to protecting your account and personal data. Here, you can manage various security features to ensure your information remains safe and secure.
+          </div>
+          <div class="tabs__panel" role="tabpanel" id="plan" tabindex="0" hidden>
+            The Subscription Plan section provides details about your current plan and available upgrades. Here, you can review your plan’s benefits, manage billing information, and explore other subscription options to find the best fit for your needs.
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/index.js"></script>
   </body>
